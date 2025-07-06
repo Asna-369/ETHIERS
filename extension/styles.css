@@ -1,0 +1,8 @@
+.cataract-mode, .cataract-mode * {
+  font-size: 22px !important;
+  font-weight: bold !important;
+  color: #FFFFFF !important;
+  background-color: #000000 !important;
+  text-shadow: 0 0 1px #ffffff;
+  line-height: 1.8 !important;
+}
