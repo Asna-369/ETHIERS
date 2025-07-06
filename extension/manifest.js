@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "Cataract Vision Helper",
+  "version": "1.0",
+  "description": "Helps users with cataract by improving readability and contrast.",
+  "permissions": ["scripting", "activeTab"],
+  "action": {
+    "default_title": "Enable Cataract Helper",
+    "default_icon": "icon.png.ico"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "css": ["styles.css"],
+      "js": ["content.js"]
+    }
+  ]
+}
